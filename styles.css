@@ -1,0 +1,21 @@
+.menu {
+    height: 100%;
+    width: 60px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+}
+
+.menu-title {
+    transform: rotate(90deg);
+    color: aliceblue;
+    text-transform: uppercase;
+    min-width: 50px;
+    font-size: 25px;
+}
+
+.menu-stretched {
+    height: 100%;
+    width: 300px;
+    background-color: black;
+}
