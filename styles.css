@@ -1,21 +1,52 @@
 .menu {
     height: 100%;
-    width: 60px;
-    background-color: black;
+    width: 70px;
+    background-color: #808080;
     display: flex;
     align-items: center;
+    z-index: 3;
+}
+
+.menu:hover ~ .menu-stretched {
+    opacity: 1;
+}
+
+.menu:hover .menu-title{
+    opacity: 0;
 }
 
 .menu-title {
     transform: rotate(90deg);
-    color: aliceblue;
+    color: #e1f4fa;
     text-transform: uppercase;
-    min-width: 50px;
     font-size: 25px;
 }
 
-.menu-stretched {
+.main {
     height: 100%;
-    width: 300px;
-    background-color: black;
+    position: relative;
+}
+
+.menu-stretched {
+    position: absolute;
+    height: 100%;
+    width: 190px;
+    background-color: #808080;
+    top: 0;
+    left: 60px;
+    opacity: 0;
+}
+
+.stretched-title {
+    color: #e1f4fa;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.menu-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 70px;
+    list-style-type: square;
 }
